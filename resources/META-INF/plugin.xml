@@ -1,0 +1,38 @@
+<idea-plugin version="1">
+  <id>com.mran.plugin.LazyAttrs</id>
+  <name>LazyForAttrs</name>
+  <version>1.0</version>
+  <vendor email="an.xiao.yaoo@gmail.com" url="http://www.github.com/mran">mran</vendor>
+
+  <description><![CDATA[
+     .<br>
+      <em>lazy for customview</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+     first version<br>
+      <em></em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="141.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="LazyFromAttrs.LazyAttrs" class="LazyAttrs" text="LazyFromAttrs" description="MainAction">
+      <add-to-group group-id="GenerateGroup" anchor="last"/>
+    </action>
+  </actions>
+
+</idea-plugin>
